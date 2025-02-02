@@ -3,6 +3,28 @@ import openai
 # Configure OpenAI API Key
 openai.api_key = "YOUR_API_KEY"
 
+def split_document_with_llm(document):
+    """
+    Use an LLM to dynamically split a document into logical parts.
+    """
+    prompt = f"""
+    You are an AI assistant that specializes in analyzing and splitting large documents into logical sections. 
+    The document provided below may include headings, sections, or paragraphs. Your task is:
+    1. Identify logical divisions in the document based on context (e.g., headings, topics, or major ideas).
+    2. Provide a list of section titles or a brief summary of each section.
+    3. If the document lacks clear headings, suggest appropriate ones.
+
+    Document: {document[:4000]}  # Truncate to fit token limits
+    """
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": prompt}],
+    )
+    
+    # Extract sections as a list from the response
+    sections = response['choices'][0]['message']['content'].strip().split("\n")
+    return sections
+    
 def worker_agent(chunk, previous_output):
     """
     Processes a single chunk of input and combines it with the previous output.
