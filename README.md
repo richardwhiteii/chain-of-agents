@@ -161,7 +161,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-If you use this code in your research, please cite:
+This code was inspired by the citation below:
 ```bibtex
 @article{zhang2024chain,
   title={Chain of Agents: Large Language Models Collaborating on Long-Context Tasks},
@@ -174,5 +174,3 @@ If you use this code in your research, please cite:
 ## Acknowledgments
 
 - Based on the paper "Chain of Agents" by Zhang et al.
-- OpenAI for GPT API access
-- Contributors and maintainers
