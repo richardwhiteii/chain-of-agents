@@ -28,12 +28,29 @@ git clone [https://github.com/yourusername/chain-of-agents.git](https://github.c
 cd chain-of-agents
 ```
 
-2. Install dependencies:
+2. Create a virtual environment:
+```bash
+python -m venv venv
+```
+
+3. Activate the virtual environment:
+
+- On Linux/Mac:
+```bash
+source venv/bin/activate
+```
+
+- On Windows:
+```bash
+venv\Scripts\activate
+```
+
+4. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up your OpenAI API key:
+5. Set up your OpenAI API key:
 ```bash
 export OPENAI_API_KEY='your-api-key-here'
 ```
