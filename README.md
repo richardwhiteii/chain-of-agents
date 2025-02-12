@@ -24,7 +24,7 @@ Chain of Agents (CoA) is a Python implementation of a document processing system
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/chain-of-agents.git
+git clone [https://github.com/yourusername/chain-of-agents.git](https://github.com/richardwhiteii/chain-of-agents.git)
 cd chain-of-agents
 ```
 
