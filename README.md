@@ -191,3 +191,20 @@ This code was inspired by the citation below:
 ## Acknowledgments
 
 - Based on the paper "Chain of Agents" by Zhang et al.
+
+## Roadmap for Future Development
+
+### Short-term Goals
+- Improve documentation
+- Add more unit tests
+- Enhance error handling
+
+### Mid-term Goals
+- Implement additional LLM models
+- Optimize performance
+- Add more features to the CLI
+
+### Long-term Goals
+- Develop a web interface
+- Integrate with other AI services
+- Expand the use cases
